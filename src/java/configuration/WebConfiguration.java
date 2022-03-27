@@ -4,7 +4,8 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletRegistration;
-
+// DOC : In a Servlet 3.0+ environment, you have the option of configuring the Servlet container programmatically as an alternative or in combination with a web.xml file
+// here we configure dispatcherServlet (which is HttpServlet in it's heart) instead of using a web.xml <servlet> and <mapping> tags 
 public class WebConfiguration extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
